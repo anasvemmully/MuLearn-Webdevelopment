@@ -1,0 +1,533 @@
+:root {
+    --superhero: 'Bangers', cursive;
+    --fantasy: 'MedievalSharp', cursive;
+    --space: 'Orbitron', sans-serif;
+    --military: 'Black Ops One', cursive;
+    --romantic: 'La Belle Aurore', cursive;
+    --scary: 'Creepster', cursive;
+    --cowboy: 'Rye', cursive;
+    --regular: sans-serif;
+    --fantasy: 'MedievalSharp', cursive;
+    --font: var(--regular);
+    --sharp: 0;
+    --soft: 10px;
+    --round: 100px;
+
+    --image: var(--soft);
+
+    --background: #f5f5f5;
+    --text: #222222;
+
+    --light: var(--background);
+    --dark: var(--text);
+
+    /* google fonts */
+    --caprasimo: 'Caprasimo', cursive;
+    --lora: 'Lora', serif;
+    --pacifivco: 'Pacifico', cursive;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        linear-gradient(345deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    animation: BackgroudAnimation 4s cubic-bezier(0.42, 0, 1, 1) infinite;
+    height: 100vh;
+}
+
+.screen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    font-family: 'Cardo', serif;
+    font-weight: 800;
+    font-size: 4rem;
+    color: white;
+    height: 100vh;
+}
+
+.intro {
+    font-size: 2.4rem;
+}
+
+.connect {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+.linkedin {
+    display: inline-block;
+    color: white;
+    text-underline-position: under;
+}
+
+.email {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.email>button {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.email>button:hover {
+    color: white;
+    background-color: black;
+}
+
+.email>input {
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 30vw;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.info {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.screen>div:nth-child(2) {
+    border-left: 2px solid white;
+    padding-left: 1.6rem;
+}
+
+.screen>div>img {
+    width: 400px;
+    border-radius: 25% 75% / 50%;
+}
+
+
+
+@keyframes BackgroudAnimation {
+    0% {
+        background: linear-gradient(345deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    1% {
+        background: linear-gradient(344deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    2% {
+        background: linear-gradient(343deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    3% {
+        background: linear-gradient(342deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    4% {
+        background: linear-gradient(341deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    5% {
+        background: linear-gradient(340deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    6% {
+        background: linear-gradient(339deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    7% {
+        background: linear-gradient(338deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    8% {
+        background: linear-gradient(337deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    9% {
+        background: linear-gradient(336deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    10% {
+        background: linear-gradient(335deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    11% {
+        background: linear-gradient(334deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    12% {
+        background: linear-gradient(333deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    13% {
+        background: linear-gradient(332deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    14% {
+        background: linear-gradient(331deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    15% {
+        background: linear-gradient(330deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    16% {
+        background: linear-gradient(329deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    17% {
+        background: linear-gradient(328deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    18% {
+        background: linear-gradient(327deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    19% {
+        background: linear-gradient(326deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    20% {
+        background: linear-gradient(325deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    21% {
+        background: linear-gradient(324deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    22% {
+        background: linear-gradient(323deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    23% {
+        background: linear-gradient(322deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    24% {
+        background: linear-gradient(321deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    25% {
+        background: linear-gradient(320deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    26% {
+        background: linear-gradient(319deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    27% {
+        background: linear-gradient(318deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    28% {
+        background: linear-gradient(317deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    29% {
+        background: linear-gradient(316deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    30% {
+        background: linear-gradient(315deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    31% {
+        background: linear-gradient(314deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    32% {
+        background: linear-gradient(313deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    33% {
+        background: linear-gradient(312deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    34% {
+        background: linear-gradient(311deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    35% {
+        background: linear-gradient(310deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    36% {
+        background: linear-gradient(309deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    37% {
+        background: linear-gradient(308deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    38% {
+        background: linear-gradient(307deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    39% {
+        background: linear-gradient(306deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    40% {
+        background: linear-gradient(305deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    41% {
+        background: linear-gradient(304deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    42% {
+        background: linear-gradient(303deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    43% {
+        background: linear-gradient(302deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    44% {
+        background: linear-gradient(301deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    45% {
+        background: linear-gradient(300deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    46% {
+        background: linear-gradient(299deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    47% {
+        background: linear-gradient(298deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    48% {
+        background: linear-gradient(297deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    49% {
+        background: linear-gradient(296deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    50% {
+        background: linear-gradient(295deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    51% {
+        background: linear-gradient(296deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    52% {
+        background: linear-gradient(297deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    53% {
+        background: linear-gradient(298deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    54% {
+        background: linear-gradient(299deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    55% {
+        background: linear-gradient(300deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    56% {
+        background: linear-gradient(301deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    57% {
+        background: linear-gradient(302deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    58% {
+        background: linear-gradient(303deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    59% {
+        background: linear-gradient(304deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    60% {
+        background: linear-gradient(305deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    61% {
+        background: linear-gradient(306deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    61% {
+        background: linear-gradient(307deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    61% {
+        background: linear-gradient(308deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    62% {
+        background: linear-gradient(309deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    63% {
+        background: linear-gradient(310deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    64% {
+        background: linear-gradient(311deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    65% {
+        background: linear-gradient(312deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    66% {
+        background: linear-gradient(313deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    67% {
+        background: linear-gradient(314deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    68% {
+        background: linear-gradient(315deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    69% {
+        background: linear-gradient(316deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    70% {
+        background: linear-gradient(317deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    71% {
+        background: linear-gradient(318deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    72% {
+        background: linear-gradient(319deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    73% {
+        background: linear-gradient(320deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    74% {
+        background: linear-gradient(321deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    75% {
+        background: linear-gradient(322deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    76% {
+        background: linear-gradient(323deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    77% {
+        background: linear-gradient(324deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    78% {
+        background: linear-gradient(325deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    79% {
+        background: linear-gradient(326deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    80% {
+        background: linear-gradient(327deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    81% {
+        background: linear-gradient(328deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    82% {
+        background: linear-gradient(329deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    83% {
+        background: linear-gradient(330deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    84% {
+        background: linear-gradient(331deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    85% {
+        background: linear-gradient(332deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    86% {
+        background: linear-gradient(333deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    87% {
+        background: linear-gradient(334deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    88% {
+        background: linear-gradient(335deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    89% {
+        background: linear-gradient(336deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    90% {
+        background: linear-gradient(337deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    91% {
+        background: linear-gradient(338deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    92% {
+        background: linear-gradient(339deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    93% {
+        background: linear-gradient(340deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    94% {
+        background: linear-gradient(341deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    95% {
+        background: linear-gradient(342deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    96% {
+        background: linear-gradient(343deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    97% {
+        background: linear-gradient(344deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    98% {
+        background: linear-gradient(345deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    99% {
+        background: linear-gradient(346deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+
+    100% {
+        background: linear-gradient(347deg, #151332, #161436, #19163f, #1e194e, #251c61, #301f76, #3d208c, #4c1fa1, #5b1cb3, #6817c2, #7111cb, #750ecf);
+    }
+}
