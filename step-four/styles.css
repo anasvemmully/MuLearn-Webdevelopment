@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+    /* font-family: 'Belanosima', sans-serif; */
+    /* font-family: 'Caprasimo', cursive; */
+    /* font-family: 'Cardo', serif; */
+    /* font-family: 'Lora', serif;  */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #82a5ca;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#hero {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background-image: url("images/galaxy.webp");
+    background-size: cover;
+
+}
+
+.nav {
+    padding: 20px 0px;
+    width: 100%;
+    background: rgb(110, 124, 184);
+    background: linear-gradient(0deg, rgba(110, 124, 184, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+#main-logo {
+    width: 200px;
+}
+
+#title {
+    text-shadow: 0px 0px 3px black;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+#title>p {
+    font-size: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(183, 183, 183);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+}
+
+.apply-container {
+    padding: 0px 0px 120px 0px;
+    width: 100%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.btn:hover {
+    transition: background-color 1s ease-in-out,
+        color 0.4s ease-in-out,
+        box-shadow 1s ease-in-out;
+    background-color: rgb(225, 225, 225);
+    color: black;
+    box-shadow: 0px 0px 1000px rgba(255, 255, 255, 1);
+
+}
