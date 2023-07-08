@@ -18,11 +18,6 @@
     --Cabin: 'Cabin', sans-serif;
     --Comforter: 'Comforter', cursive;
     --Roboto: 'Roboto', sans-serif;
-
-    /* 1300px below */
-
-
-
 }
 
 body {
@@ -38,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 .first-screen {
-    padding: 6em 6em 6rem 6em;
+    /* padding: 6em 6em 6rem 6em; */
     display: flex;
     flex-direction: column;
 }
@@ -220,16 +215,40 @@ body::-webkit-scrollbar {
     }
 }
 
-
-@media screen and (min-width: 600px) {
-
+@media screen and (min-width: 300px) {
     .wish {
         font-size: 1.2rem;
     }
 
     .wish-main {
         margin-top: 1rem;
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .wish-secondary {
+        margin-top: 1rem;
+    }
+
+    .screen {
+        height: 100%;
+    }
+
+    .first-screen {
+        padding: 4em !important;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    .wish {
+        font-size: 1.6rem;
+    }
+
+    .wish-main {
+        margin-top: 1rem;
+        font-size: 2.6rem;
     }
 
     .wish-secondary {
@@ -237,11 +256,11 @@ body::-webkit-scrollbar {
     }
 
     .screen {
-        height: 100vh;
+        height: 100%;
     }
 
     .first-screen {
-        /* padding: 6em 6em 6rem 6em; */
+        padding: 6em 6em 6rem 6em !important;
         flex-direction: row;
         justify-items: center;
         align-items: center;
@@ -258,6 +277,10 @@ body::-webkit-scrollbar {
     .first-screen {
         justify-content: space-around;
 
+    }
+
+    .screen {
+        height: 100vh;
     }
 
     .wish {
@@ -298,6 +321,11 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (min-width: 1128px) {
+
+    
+    .screen {
+        height: 100vh;
+    }
 
     .wish {
         font-size: 2rem;
